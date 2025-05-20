@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "geobeam"
+version = "0.1.0"
+description = "A gps based beamforming"
+authors = ["ardiantovn <vendi2012@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+numpy = "^1.26.4"
+pandas = "^2.2.1"
+loguru = "^0.7.2"
+tqdm = "^4.66.2"
+scikit-learn = "1.5.0"
+hickle = "^5.0.3"
+torchinfo = "^1.8.0"
+matplotlib = "^3.8.3"
+seaborn = "^0.13.2"
+scipy = "^1.13.0"
+dataclasses = "^0.6"
+onnx = "^1.15.0"
+onnxruntime = "1.16.0"
+torch = [
+    {version = "^2.4.1+cu118", source = "pytorch-gpu", platform = "linux"},
+    {version = "^2.4.1+cu118", source = "pytorch-gpu", platform = "win32"}
+]
+
+[tool.poetry.dev-dependencies]
+jupyter = "^1.0.0"
+ipython = "^7.26.0"
+
+[[tool.poetry.source]]
+name = "pytorch-gpu"
+url = "https://download.pytorch.org/whl/cu118"
+priority = "explicit"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
