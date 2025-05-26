@@ -3,7 +3,8 @@
 This is a research code repository for GPS-aided beam prediction and tracking for mmWave communication.
 
 In this work, there are 3 folders inside folder `notebooks`:
-1. Folder `minmaxgeo_uebsvector` contains the proposed model for beam prediction and tracking that uses min-max normalized UAV's geodetic position (latitude and longitude) and UAV-BS unit vector as input.
+1. Folder `minmaxgeo_uebsvector` contains the proposed model for beam prediction and tracking that uses min-max normalized UAV's geodetic position (latitude and longitude) and UAV-BS unit vector as input. This folder contains the code implementation
+of this work: [GPS-Aided Deep Learning for Beam Prediction and Tracking in UAV mmWave Communication](https://arxiv.org/abs/2505.17530).
 2. Folder `uebsvector_logscaledheight` contains the proposed model for beam prediction and tracking that uses UAV-BS unit vector and log scaled UAV's height as input.
 3. Folder `baseline` contains the baseline models for beam prediction and tracking as described in [3] (NOTE: these implementations are not the official code from the original authors).
 
