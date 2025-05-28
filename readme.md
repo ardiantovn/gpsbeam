@@ -5,14 +5,14 @@ This is a research code repository for GPS-aided beam prediction and tracking fo
 In this work, there are 3 folders inside folder `notebooks`:
 1. Folder `minmaxgeo_uebsvector` contains the proposed model for beam prediction and tracking that uses min-max normalized UAV's geodetic position (latitude and longitude) and UAV-BS unit vector as input. This folder contains the code implementation
 of this work: [GPS-Aided Deep Learning for Beam Prediction and Tracking in UAV mmWave Communication](https://arxiv.org/abs/2505.17530).
-2. Folder `uebsvector_logscaledheight` contains the proposed model for beam prediction and tracking that uses UAV-BS unit vector and log scaled UAV's height as input.
+2. Folder `uebsvector_logscaledheight` contains the proposed model for beam prediction and tracking that uses UAV-BS unit vector and log scaled UAV's height as input. [Read the tl;dr article about it  here](https://medium.com/@ardiantovn/an-overview-of-gps-assisted-beam-prediction-and-tracking-for-uav-mmwave-communication-85a00c13be8b).
 3. Folder `baseline` contains the baseline models for beam prediction and tracking as described in [3] (NOTE: these implementations are not the official code from the original authors).
 
 ## Notebook Content:
 
 1. `00_test_drone_cnn_ed_rnn_experiment` and `01_drone_cnn_ed_rnn_experiment.ipynb`: a notebook to train the proposed model.
 2. `02_visualization_combination.ipynb` and `03_visualization.ipynb`: a notebook to visualize the evaluation metrics.
-3. `00_test_onnx.ipynb`: a notebook to measure the inference time using PyTorch model and ONNX model.
+3. `00_test_onnx.ipynb`: a notebook to measure the inference time using PyTorch model and ONNX model. [Read the article about it here](https://medium.com/@ardiantovn/run-the-deep-learning-model-4-5x-faster-with-onnx-runtime-760db96cabdb)
 4. `00_test_dataset_label.ipynb`: visualize label distribution using various data set splitting methods.
 5. `00_test_drone_base_prediction.ipynb`: train a baseline beam prediction model[3].
 6. `00_test_drone_base_tracking.ipynb`: train a baseline beam tracking model[3].
